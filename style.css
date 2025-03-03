@@ -1,0 +1,380 @@
+/*
+Name Sebastian
+file name: style.css
+Date created: Feb 20th 2025
+Purpose: Styling index.html,contact.html,resume.html and projects.html
+*/
+
+body {
+    background: linear-gradient(132deg,#0D0D0D  0.00%, #292929);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #0A66c2;
+    
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    padding: 15px 0px;
+    justify-content: space-around;
+
+}
+
+nav a{
+    color: #1C1c1c;
+    background-color: whitesmoke;
+    border: solid 2px black;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+    
+}
+
+nav a:hover {
+    box-shadow: 5px 5px #0D0D0D;
+    background-color: purple;
+    color:white
+}
+
+
+
+.opening{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.opening p{
+    color:#0A66c2
+}
+
+.opening a{
+    text-decoration: none;
+    color: #E0E0E0;
+    background-color: forestgreen;
+    padding: 5px;
+    border-radius: 5;
+    border: #E0E0E0 solid 2px;
+    transition:  0.5s;
+}
+
+.opening a:hover{
+    background-color: blue;
+    border-radius: 20px;
+}
+
+
+
+
+footer {
+    margin-top: 100px;
+    background-color: #0A66c2;
+    padding: 10px 0px;
+    margin: auto;
+    text-align: center;
+    
+   
+    
+}
+
+/*footer style*/
+footer a{
+    
+    color: #1C1c1c;
+    background-color: whitesmoke;
+    border: solid 2px black;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1px;
+    transition: 0.5s;
+    
+}
+
+p i {
+    
+    color:#E0E0E0;
+}
+
+#headshot {
+    float: right;
+    margin: 10px 50px 10px 20px;
+
+}
+
+
+
+/*properties for the Contact page*/
+
+
+
+
+form div {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.survey {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    background-color: teal;
+    color: yellow;
+    font-size: medium;
+    border-radius: 7px;
+    border: solid 2px black;
+    padding: 30px;
+    margin: 15px 0px;
+    font-size: 1.7em;
+}
+
+label span {
+    color: crimson;
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 5px;
+    
+}
+
+div section {
+    justify-content: space-around;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    transition: 0.5s;
+    
+
+
+}
+
+#submit,#reset {
+    margin: 5px;
+    transition: 0.5s;
+    font-size: 0.6em;
+    
+}
+
+
+#submit:hover {
+    background-color: green;
+
+}
+
+.objective{
+    background-color: #0D0D0D;
+    color: gold;
+    padding: 5px;
+
+}
+
+.objective h3 {
+    color: gold;
+}
+
+.subhead {
+    background-color: cyan;
+    color: darkorange;
+    padding: 5px 0px;
+
+
+
+}
+
+#contactOpening {
+    color:#0A66c2;
+}
+
+/* properties for the Resume page*/
+
+li {
+    color: #E0E0E0;
+    font-size: 0.8em;
+}
+
+h1,h2,h3,h6{
+    color: purple
+}
+
+li h5{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/*properties for the projects page*/
+
+
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.project {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #00FFFF;
+}
+
+.project img {
+    max-width: 100%;
+    width: 700px;
+    height: 750px;
+    /*object-fit: cover;*/
+}
+
+.previous,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.previous:hover,
+.next:hover {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    opacity: 1;
+}
+
+/*Laying out the next and previous button*/
+.next {
+    right: 20px;
+}
+
+.previous {
+    left: 20px;
+}
+/*reponsive design for smartphones*/
+@media only screen and (max-width: 480px) {
+    p {
+      font-size: 0.5em;
+      background-color: red;
+    }
+
+   
+
+    .opening p{
+        color:#0A66c2
+    }
+
+
+
+    a {
+        font-size: 14px;
+    }
+
+    .project img {
+        max-width: 100%;
+        width: 200px;
+        height: 250px;
+      
+    }
+  }
+/*reponsive design for adjusted labtop size*/
+  @media only screen and (max-width: 600px) {
+    p {
+      font-size: 16px;
+      
+    }
+
+    .opening {
+        flex-flow: column wrap;
+    }
+
+    .opening div a {
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-size: 14px; 
+    }
+
+    .gallery {
+        width: 100%;
+        flex: 0 0 50%;
+    }
+
+    form section{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .survey {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-flow: column wrap;
+        background-color: teal;
+        color: yellow;
+        font-size: medium;
+        border-radius: 7px;
+        border: solid 2px black;
+        padding: 10px;
+        margin: 5px 0px;
+        font-size: 1em;
+    }
+    
+    label span {
+        color: crimson;
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    input {
+        margin-bottom: 5px;
+    }
+    
+    div section {
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    .project img {
+        max-width: 100%;
+        width: 400px;
+        height: 450px;
+        
+    }
+
+   
+
+   
+
+  }
+/*reponsive design for large desktop*/
+@media only screen and (min-width: 1537px) {
+    p {
+      font-size: 18px;
+    
+    }
+  }

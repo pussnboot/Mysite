@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name:Sebastian Sell
+        file name : contact.html
+        date created: Feb 20th 2025
+        This particular page provides a form for users to fill out.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta name="keyboards" content="style">
+    <meta name="author" content="Sebastian Sell">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <div>
+                <a id="home" href="index.html"><i class="fa fa-home"></i>Home</a>
+            </div>
+            <div>
+                <a href="resume.html"><i class="fa fa-file"></i> Resume</a>
+                <a href="projects.html"><i class="fa fa-diagram-project"></i> Projects</a>
+                <a href="contact.html"><i class="fa fa-address-card"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!--Opening Paragraph-->
+    <h2 id="contactOpening">While you are viewing my site, feel free to fill out this surey so I can get to know <strong>you</strong>.</h2>
+        <!--Survey for user to fill out-->
+        <form method="post" action="javascript:void(0)">
+            <div>
+                <div class="survey">
+                    <label for="firstName"><Span>*</Span> First Name</label>    
+                    <input type="text" id="firstName" name="firstName" size="10" required>
+                    <label for="lastName"><Span>*</Span>Last Name</label>    
+                    <input type="text" id="lastName" name="lastName" size="10" required>
+                    <label for="email"><Span>*</Span>Email</label>    
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Anything you wish to share </label>
+                    <textarea id="message" name="message"></textarea>
+                    <div>
+                        <button id="submit" type="submit">Send</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </form>
+    <!--Footer for the page-->
+    <footer>
+        <a href="#top">Top of the page</a>
+    </footer>
+</body>
+</html>
