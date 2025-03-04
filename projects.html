@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name:Sebastian Sell
+        file name : projects.html
+        date created: Feb 20th 2025
+        This particular page showcases project I have done.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <meta name="keyboards" content="style">
+    <meta name="author" content="Sebastian Sell">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <div>
+                <a id="home" href="index.html"><i class="fa fa-home"></i>Home</a>
+            </div>
+            <div>
+                <a href="resume.html"><i class="fa fa-file"></i> Resume</a>
+                <a href="projects.html"><i class="fa fa-diagram-project"></i> Projects</a>
+                <a href="contact.html"><i class="fa fa-address-card"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Photo Carousel-->
+    <div class="gallery">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img class="projectpic" src="/pictures/MiniCourse.png" >
+            
+            <h3>Mini-course site</h3>
+            <p>Site i made during a mini course. </p>
+            <p>April 2023</p>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img class="projectpic" src="/pictures/CakeWebsite.png" >
+            <h3>site for cakes</h3>
+            <p>Site I made in my spare time</p>
+            <p>July 2023 - August 2023</p>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img class="projectpic" src="/pictures/Battleship.png" >
+            <h3>Battleship AI</h3>
+            <p>a battleship program using python</p>
+            <p>Janaury 2024</p>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img class="projectpic" src="pictures/FitnessTracker.png" alt="Fitness tracker program for college">
+            <h3>FitnessTracker Program</h3>
+            <p>a Fitness tracker program using Java</p>
+            <p>February 2025</p>
+        </div>
+    </div>
+    <button class="prev" onclick="plusSlides(-1)">Previous</button>
+    <button class="next" onclick="plusSlides(1)">Next</button>
+    <!--Footer for the page-->
+    <footer>
+        <p><i>&copy; 2025 Sebastian Sell.</i></p>
+    </footer>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+    
+    
+
+
+        
+
+
+</body>
+</html>
